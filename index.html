@@ -29,8 +29,45 @@
 			<p>Empowering future economy</p>
 		</section>
 
-		<section style="width: 100%;">
-			<img style="border: none; background: none; box-shadow: none; width:150%;" src="images/canvas.png">
+		<!--<section style="width: 100%;">-->
+			<!--<img style="border: none; background: none; box-shadow: none; width:150%;" src="images/canvas.png">-->
+		<!--</section>-->
+
+		<section>
+			<h2>Evolution of society</h2>
+			<p align="left">We believe in progressive evolution, technology changing society for good. The major milestone for humanity:</p>
+			<ul>
+				<li class="fragment fade-up"><span style="color:red;"><b>2018</b></span> Human-assisted machines</li>
+				<li class="fragment fade-up"><span style="color:red;"><b>2025:</b></span>  Machine-assited humans</li>
+				<li class="fragment fade-up"><span style="color:red;"><b>2100:</b></span>  Human-machine ecosystem</li>
+				<li class="fragment fade-up"><span style="color:red;"><b>3000:</b></span>  Trancedental existance</li>
+
+			</ul>
+		</section>
+
+		<section>
+			<h2>Backbone of human-machine ecosystems</h2>
+			<p align="left"><span style="color:red;"><b>BLOCKCHAIN</b></span> lays in foundation of regulating interactions between machines.</p>
+			<ul>
+				<li>Machines operate autonomously in the ecosystem</li>
+				<li>Machines enter collaboration through microtransactions</li>
+				<li>Machine measure their goodness via blockchain, genuinely</li>
+			</ul>
+		</section>
+
+
+
+		<section>
+			<h2>Open Research Questions</h2>
+			<ul>
+				<li>Blockchain powered behavioural robotics</li>
+				<li>Incentives for fully autonomous ecosystem</li>
+				<li>Boundaries and limitation of machine good behavior</li>
+				<li>Swarn vs individualism</li>
+				<li>Minimal set of incentives for complex behavior</li>
+				<li>Introducing evolutions</li>
+				<li>Deplitable privacy via non-interactive zero-knowledge </li>
+			</ul>
 		</section>
 
 		<section>
@@ -50,6 +87,7 @@
 				</div>
 			</section>
 		</section>
+
 		<section>
 			<section>
 				<h2 style="color: red">Challenge: Society</h2>
@@ -148,16 +186,14 @@
 			<!--</p>-->
 		</section>
 
-		<section style="width: 100%;">
-			<h2 style="color: red">Game</h2>
-			Supply chain optimization
-			<iframe src="./visualize.html" width="1024" height="800"></iframe>
-		</section>
+		<!--<section style="width: 100%;">-->
+			<!--<iframe src="./visualize.html" width="960" height="800"></iframe>-->
+		<!--</section>-->
 
-		<section style="width: 100%;">
-			<div id="datadump" style="font-size: x-small">
-			</div>
-		</section>
+		<!--<section style="width: 100%;">-->
+			<!--<div id="datadump" style="font-size: x-small">-->
+			<!--</div>-->
+		<!--</section>-->
 
 		<!--<section>-->
 		<!--<p class="fragment grow">grow</p>-->
@@ -197,26 +233,6 @@
             { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
         ]
     });
-
-
-    var ws = new WebSocket("ws://127.0.0.1:5678/"),
-		 messages = document.createElement('ul');
-    ws.onmessage = function (event) {
-        console.log(event)
-		try {
-            //messages = document.getElementsByTagName('ul')[0],
-        var
-            message = document.createElement('li'),
-            content = document.createTextNode(event.data);
-        message.appendChild(content);
-        messages.appendChild(message);
-		}
-		catch(err) {
-            console.log(err)
-		}
-    };
-    document.querySelector('#datadump').appendChild(messages);
-
 </script>
 </body>
 </html>
