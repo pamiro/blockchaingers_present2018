@@ -4,6 +4,37 @@
     <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
     <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
 </head>
+<style>
+    #messagebox {
+        position: absolute;
+        right:30px;
+        top: 30px;
+        width: 300px;
+        bottom: 30px;
+        padding: 20px;
+        background-color: #586e7580;
+        border-color: rgba(0,0,0,0.7);
+        border-style: none;
+        border-width: 1px;
+        border-radius: 10px;
+        border-width: 1px;
+        box-shadow: 5px 10px 18px #888888;
+        font-family: sans-serif;
+    }
+
+    #controls {
+        position: absolute;
+        left:30px;
+        top: 30px;
+        width: 300px;
+        bottom: 30px;
+        padding: 20px;
+        background-color: #8b7c6980;
+        border-radius: 10px;
+        box-shadow: 5px 10px 18px #888888;
+        font-family: sans-serif;
+    }
+</style>
 <script>
     AFRAME.registerComponent('updater', {
         schema: {
@@ -309,6 +340,11 @@
 
 
 </a-scene>
+<div id="messagebox">
+    Transactions
+</div>
+<div id="controls">
+    Apps
+</div>
 </body>
-
 </html>
